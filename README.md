@@ -1,2 +1,2 @@
-# ilnehc.githu.io
-Personal Website
+# Personal Website
+Homepage: [ilnehc.github.io](ilnehc.github.io)
