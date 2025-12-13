@@ -43,6 +43,24 @@ h4 span {
     align-items: center;
 }
 
+.anchor {
+    position: relative;
+    right: -5px;
+    top: 30%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+    text-decoration: none;
+    color: #0366d6;
+    font-size: 0.9em;
+}
+
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor {
+    opacity: 1;
+}
+
 a:link { color: rgb(0, 0, 100);text-decoration: none; }
 a:hover { color: rgb(200, 0, 0) }
 a:active { color: rgb(255, 0, 102) }
