@@ -1,546 +1,469 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Li's Homepage</title>
-  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <!-- Bulma Version 0.7.5-->
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
-  <link rel="stylesheet" href="./assets/academicons-1.9.4/css/academicons.min.css"/>
-  <link href='css/style.css' rel='stylesheet' type='text/css'>
-  <link href="assets/fontawesome-free-6.7.2/css/fontawesome.css" rel="stylesheet" />
-  <link href="assets/fontawesome-free-6.7.2/css/brands.css" rel="stylesheet" />
-  <link href="assets/fontawesome-free-6.7.2/css/solid.css" rel="stylesheet" />
-  <link href="assets/fontawesome-free-6.7.2/css/sharp-thin.css" rel="stylesheet" />
-  <link href="assets/fontawesome-free-6.7.2/css/duotone-thin.css" rel="stylesheet" />
-  <link href="assets/fontawesome-free-6.7.2/css/sharp-duotone-thin.css" rel="stylesheet" />
+  <meta name="description" content="Li Chen is a robotics researcher, a co-founder and Head of AI at Archon Robotics, and a PhD student at the University of Hong Kong.">
+  <meta name="theme-color" content="#f7f5f0">
+  <title>Li Chen | Robotics Researcher</title>
+  <link rel="canonical" href="https://ilnehc.github.io/">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <section class="section">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-2" style="display:flex;align-items:flex-start">
-          <div class="sticky">
-            <figure class="image is-128x128">
-              <picture>
-                <source srcset="./assets/images/Li.webp" type="image/webp">
-                <img class="is-rounded" src="./assets/images/Li.png" loading="lazy" width="128" height="128" alt="Li Chen">
-              </picture>
-            </figure>
-            <br>
-            <div class="content">
-              <h3>Li Chen</h3>
-              <h6>(陈立)</h6>
-            </div>
-            <!-- details -->
-            <!-- <div class="details">
-              <h3>EMAIL</h3>
-              <p><a href="mailto:ilnehc@umich.edu">ilnehc<br>[at]umich[dot]edu</a></p>
-            </div> -->
-            <!-- social network icons -->
-            <div class="social">
-              <a href="mailto:ilnehc@umich.edu" target="_blank">
-                <span class="fa-solid fa-square-envelope fa-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-              <a href="https://scholar.google.com/citations?user=ulZxvY0AAAAJ&hl=en" target="_blank">
-                <span class="ai ai-google-scholar-square ai-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-              <a href="https://github.com/ilnehc" target="_blank">
-                <span class="fa-brands fa-square-github fa-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-              <a href="https://x.com/ilnehc" target="_blank">
-                <span class="fa-brands fa-square-x-twitter fa-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-              <a href="https://www.linkedin.com/in/li-chen-30b256167/" target="_blank">
-                <span class="fa-brands fa-linkedin fa-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-            </div>
-
-
-            <div id="sidebar" class="menu sticky is-hidden-mobile">
-              <p class="menu-label"><b>Quick Links</b></p>
-              <ul class="menu-list">
-                <!-- <li><a href="#news">News</a></li> -->
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#activity">Activity</a></li>
-                <li><a href="#awards">Honors</a></li>
-              </ul>
-            </div>
-          </div>
-
-
-
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-shell">
+    <aside class="profile-rail" aria-label="Profile">
+      <div class="profile-card">
+        <img class="profile-photo" src="assets/images/Li-avatar.webp" width="160" height="160" alt="Portrait of Li Chen" decoding="async" fetchpriority="high">
+        <div>
+          <h1>Li Chen</h1>
+          <p class="name-chinese" lang="zh-Hans">陈立</p>
+          <p class="current-role">
+            <a href="https://www.archon.tech/" target="_blank" rel="noopener noreferrer">Co-founder &amp; Head of AI<br>Archon Robotics</a>
+          </p>
         </div>
-        <div class="column">
-          <div class="content">
-            <!--News-->
-            <!-- <h3 id="news">News</h3>
-            <ul style="color: rgb(50, 50, 50);">
-              <li><span>July, 2023 - Two papers (<a href="https://github.com/OpenDriveLab/DriveAdapter" target="_blank"><u>DriveAdapter</u></a>, <a href="https://github.com/OpenDriveLab/OccNet" target="_blank"><u>OccNet</u></a>) get accepted to ICCV 2023. DriveAdapter is listed as an oral presentation.</span></li>
-              <li><span>June, 2023 - <a href="https://github.com/OpenDriveLab/UniAD" target="_blank"><u>UniAD</u></a> won the <b>Best Paper Award</b> of CVPR 2023 !!!</span></li>
-              <li><span>June, 2023 - We organized the <a href="https://opendrivelab.com/e2ead/cvpr23.html" target="_blank"><u>End-to-end Autonomous Driving: Emerging Tasks and Challenges</u></a> Workshop on CVPR 2023.</span></li>
-              <li><span>May, 2023 - We held the <a href="https://opendrivelab.com/sr4ad/iclr23.html" target="_blank"><u>Scene Representations for Autonomous Driving Workshop</u></a> on ICLR 2023.</span></li>
-              <li><span>Mar, 2023 - CVPR 2023 paper <a href="https://github.com/OpenDriveLab/UniAD" target="_blank"><u>UniAD</u></a> is accepted as <b>award candidate</b> (12/9155) !!</span></li>
-              <li><span>Mar, 2023 - Three papers (<a href="https://github.com/OpenDriveLab/UniAD" target="_blank"><u>UniAD</u></a>, <a href="https://github.com/OpenDriveLab/ThinkTwice" target="_blank"><u>ThinkTwice</u></a>, <a href="https://github.com/OpenDriveLab/Birds-eye-view-Perception" target="_blank"><u>FocalDistiller</u></a>) get accepted to CVPR 2023.</span></li>
-            </ul> -->
+      </div>
 
-            <!--Intro-->
-            <h3 id="intro">Intro</h3>
-            <p style="color: rgb(50, 50, 50);">
-              I am currently pursuing a PhD at the University of Hong Kong (HKU), as a member of <a href="https://opendrivelab.com/" target="_blank"><u>OpenDriveLab</u></a> and <a href="https://mmlab.hk/" target="_blank"><u>MMLab</u></a>. 
-              I work under the supervision of Prof. <a href="http://luoping.me/" target="_blank"><u>Ping LUO</u></a> and Prof. <a href="https://datascience.hku.hk/people/hongyang-li/" target="_blank"><u>Hongyang LI</u></a>.
-              I earned my Master's in Robotics from the Robotics Institute at the University of Michigan, Ann Arbor, in 2020, after a Bachelor's degree in Mechanical Engineering from Shanghai Jiao Tong University in 2019. <br>
-              <br>
-              My research interests primarily focus on robotics, encompassing areas such as autonomous driving, robot learning, and robotic systems. Representative projects are <span style="background-color:#ffffd0">highlighted</span> below.
-              <br>
-              <br>
-              <!-- <b style="color:rgb(255, 100, 0);">I am open to research collaborations. Please feel free to contact me if you are interested in working with me.</b> -->
-            </p>
-            <!-- [<a href = "">CV</a>].<br/><br/> -->
+      <nav class="social-links" aria-label="External profiles">
+        <a href="mailto:ilnehc@umich.edu" aria-label="Email" title="Email">
+          <img src="assets/fontawesome-free-6.7.2/svgs/solid/square-envelope.svg" width="20" height="20" alt="" aria-hidden="true">
+        </a>
+        <a href="https://scholar.google.com/citations?user=ulZxvY0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+          <img src="assets/academicons-1.9.4/svg/google-scholar-square.svg" width="20" height="20" alt="" aria-hidden="true">
+        </a>
+        <a href="https://github.com/ilnehc" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+          <img src="assets/fontawesome-free-6.7.2/svgs/brands/square-github.svg" width="20" height="20" alt="" aria-hidden="true">
+        </a>
+        <a href="https://x.com/ilnehc" target="_blank" rel="noopener noreferrer" aria-label="X" title="X">
+          <img src="assets/fontawesome-free-6.7.2/svgs/brands/square-x-twitter.svg" width="20" height="20" alt="" aria-hidden="true">
+        </a>
+        <a href="https://www.linkedin.com/in/li-chen-30b256167/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+          <img src="assets/fontawesome-free-6.7.2/svgs/brands/linkedin.svg" width="20" height="20" alt="" aria-hidden="true">
+        </a>
+      </nav>
 
+      <nav class="section-nav" aria-label="On this page">
+        <p>On this page</p>
+        <a href="#intro">Intro</a>
+        <a href="#research">Research</a>
+        <a href="#activity">Activity</a>
+        <a href="#awards">Honors</a>
+      </nav>
+    </aside>
 
-            <!--Research-->
-            <h3 id="research">Research</h3> 
-            <p><small>(*: Equal contribution. †: Project lead/Corresponding author.)</small></p>
+    <main id="main-content">
+      <section id="intro" class="page-section" aria-labelledby="intro-heading">
+        <h2 id="intro-heading">Intro</h2>
+        <p>
+          I am a co-founder of <a href="https://www.archon.tech/" target="_blank" rel="noopener noreferrer">Archon Robotics (源策未来)</a>, where I serve as Head of AI.
+          I am also pursuing a PhD at the University of Hong Kong (HKU) as a member of <a href="https://opendrivelab.com/" target="_blank" rel="noopener noreferrer">OpenDriveLab</a> and <a href="https://mmlab.hk/" target="_blank" rel="noopener noreferrer">MMLab</a>, under the supervision of Prof. <a href="http://luoping.me/" target="_blank" rel="noopener noreferrer">Ping Luo</a> and Prof. <a href="https://datascience.hku.hk/people/hongyang-li/" target="_blank" rel="noopener noreferrer">Hongyang Li</a>.
+          I earned my Master's in Robotics from the Robotics Institute at the University of Michigan, Ann Arbor, in 2020, after a Bachelor's degree in Mechanical Engineering from Shanghai Jiao Tong University in 2019.
+        </p>
+        <p>
+          My research focuses on robot learning, autonomous driving, and robotic systems. Representative projects are <mark>highlighted</mark> below.
+        </p>
+      </section>
 
+      <section id="research" class="page-section" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <p class="publication-note">(*: Equal contribution. †: Project lead/Corresponding author.)</p>
 
-            <h4>Selected Publications <span>(See all <a href="https://scholar.google.com/citations?user=ulZxvY0AAAAJ&hl=en" target="_blank"><u>here</u></a>.)</span></h4>
+        <h3 class="subsection-title">Selected Publications <span>(See all <a href="https://scholar.google.com/citations?user=ulZxvY0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">here</a>.)</span></h3>
 
-            <article class="columns" style="background-color: #ffffd0">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <img src="assets/images/EgoHumanoid.gif" loading="lazy" alt="Unlocking In-the-Wild Loco-Manipulation with Robot-Free Egocentric Demonstration">
-                  </picture>
+            <article class="publication publication--featured">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image publication__image--animated" src="assets/images/EgoHumanoid-poster.webp" data-animated-src="assets/images/EgoHumanoid-animated.webp" width="320" height="180" loading="lazy" decoding="async" fetchpriority="low" alt="EgoHumanoid project demonstration">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">EgoHumanoid: Unlocking In-the-Wild Loco-Manipulation with Robot-Free Egocentric Demonstration</b><br>
-                    Modi Shi*, Shijia Peng*, Jin Chen*, Haoran Jiang, Tianyu Li, Ping Luo, Di Huang, Hongyang Li, <b style="color:rgb(50, 50, 50);">Li Chen<sup>†</sup></b>.<br>
-                    <i style="color:rgb(0, 0, 100);">Robotics: Science and Systems (RSS), 2026</i><br>
-                    <a href="https://opendrivelab.com/EgoHumanoid/" target="_blank">[<u>page</u>]</a>
-                    <a href="https://arxiv.org/abs/2602.10106" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/EgoHumanoid" target="_blank">[<u>code</u>]</a>
+                    <b>EgoHumanoid: Unlocking In-the-Wild Loco-Manipulation with Robot-Free Egocentric Demonstration</b><br>
+                    Modi Shi*, Shijia Peng*, Jin Chen*, Haoran Jiang, Tianyu Li, Ping Luo, Di Huang, Hongyang Li, <b>Li Chen<sup>†</sup></b>.<br>
+                    <i>Robotics: Science and Systems (RSS), 2026</i><br>
+                    <a href="https://opendrivelab.com/EgoHumanoid/" target="_blank" rel="noopener noreferrer">[page]</a>
+                    <a href="https://arxiv.org/abs/2602.10106" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/EgoHumanoid" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <img src="assets/images/RISE.gif" loading="lazy" alt="RISE: Self-Improving Robot Policy with Compositional World Model">
-                  </picture>
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image publication__image--animated" src="assets/images/RISE-poster.webp" data-animated-src="assets/images/RISE-animated.webp" width="320" height="180" loading="lazy" decoding="async" fetchpriority="low" alt="RISE robot policy demonstration">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">RISE: Self-Improving Robot Policy with Compositional World Model</b><br>
-                    Jiazhi Yang*, Kunyang Lin*, Wencong Zhang*, Jinwei Li*, Tianwei Lin, Longyan Wu, Ya-Qin Zhang, Hao Zhao, Ping Luo, Zhizhong Su, Hongyang Li, Xiangyu Yue, <b style="color:rgb(50, 50, 50);">Li Chen<sup>†</sup></b>.<br>
-                    <i style="color:rgb(0, 0, 100);">Robotics: Science and Systems (RSS), 2026</i><br>
-                    <a href="https://opendrivelab.com/kai0-rl/" target="_blank">[<u>page</u>]</a>
-                    <a href="https://arxiv.org/abs/2602.11075" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/RISE" target="_blank">[<u>code</u>]</a>
+                    <b>RISE: Self-Improving Robot Policy with Compositional World Model</b><br>
+                    Jiazhi Yang*, Kunyang Lin*, Wencong Zhang*, Jinwei Li*, Tianwei Lin, Longyan Wu, Ya-Qin Zhang, Hao Zhao, Ping Luo, Zhizhong Su, Hongyang Li, Xiangyu Yue, <b>Li Chen<sup>†</sup></b>.<br>
+                    <i>Robotics: Science and Systems (RSS), 2026</i><br>
+                    <a href="https://opendrivelab.com/kai0-rl/" target="_blank" rel="noopener noreferrer">[page]</a>
+                    <a href="https://arxiv.org/abs/2602.11075" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/RISE" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
             
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <source srcset="assets/images/GO1-Pro.webp" type="image/webp">
-                    <img src="assets/images/GO1-Pro.png" loading="lazy" alt="Is Diversity All You Need for Scalable Robotic Manipulation?">
-                  </picture>
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image" src="assets/images/GO1-Pro-thumb.webp" width="480" height="249" loading="lazy" decoding="async" fetchpriority="low" alt="GO1-Pro scalable robotic manipulation project">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">Is Diversity All You Need for Scalable Robotic Manipulation?</b><br>
-                    Modi Shi*, <b style="color:rgb(50, 50, 50);">Li Chen*</b>, Jin Chen*, Yuxiang Lu, Chiming Liu, Guanghui Ren, Ping Luo, Di Huang, Maoqing Yao, Hongyang Li.<br>
-                    <i style="color:rgb(0, 0, 100);">IEEE Transactions on Robotics (T-RO), 2026</i><br>
-                    <a href="https://arxiv.org/abs/2507.06219" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/AgiBot-World" target="_blank">[<u>code</u>]</a>
+                    <b>Is Diversity All You Need for Scalable Robotic Manipulation?</b><br>
+                    Modi Shi*, <b>Li Chen*</b>, Jin Chen*, Yuxiang Lu, Chiming Liu, Guanghui Ren, Ping Luo, Di Huang, Maoqing Yao, Hongyang Li.<br>
+                    <i>IEEE Transactions on Robotics (T-RO), 2026</i><br>
+                    <a href="https://arxiv.org/abs/2507.06219" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/AgiBot-World" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <source srcset="assets/images/Position.webp" type="image/webp">
-                    <img src="assets/images/Position.webp" loading="lazy" alt="Intelligent Robot Manipulation Requires Self-Directed Learning">
-                  </picture>
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image" src="assets/images/Position-thumb.webp" width="480" height="320" loading="lazy" decoding="async" fetchpriority="low" alt="Self-directed learning for intelligent robot manipulation">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">Intelligent Robot Manipulation Requires Self-Directed Learning</b><br>
-                    <b style="color:rgb(50, 50, 50);">Li Chen</b>, Chonghao Sima, Kashyap Chitta, Antonio Loquercio, Ping Luo, Yi Ma, Hongyang Li.<br>
-                    <i style="color:rgb(0, 0, 100);">CVPR Workshop, 2026</i><br>
-                    <i style="color:rgb(0, 0, 100);">ICLR Workshops, 2026</i><br>
-                    <a href="https://openreview.net/pdf?id=Seb7rprW1Y" target="_blank">[<u>paper</u>]</a>
+                    <b>Intelligent Robot Manipulation Requires Self-Directed Learning</b><br>
+                    <b>Li Chen</b>, Chonghao Sima, Kashyap Chitta, Antonio Loquercio, Ping Luo, Yi Ma, Hongyang Li.<br>
+                    <i>CVPR Workshop, 2026</i><br>
+                    <i>ICLR Workshops, 2026</i><br>
+                    <a href="https://openreview.net/pdf?id=Seb7rprW1Y" target="_blank" rel="noopener noreferrer">[paper]</a>
                   </p>
                 </div>
               </div>
             </article>
 
             <!-- Agility Meets Stability: Versatile Humanoid Control with Heterogeneous Data -->
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <img src="assets/images/AMS.gif" loading="lazy" alt="Agility Meets Stability: Versatile Humanoid Control with Heterogeneous Data">
-                  </picture>
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image publication__image--animated" src="assets/images/AMS-poster.webp" data-animated-src="assets/images/AMS-animated.webp" width="320" height="180" loading="lazy" decoding="async" fetchpriority="low" alt="Agility Meets Stability humanoid control demonstration">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">Agility Meets Stability: Versatile Humanoid Control with Heterogeneous Data</b><br>
-                    Yixuan Pan*, Ruoyi Qiao*, <b style="color:rgb(50, 50, 50);">Li Chen</b>, Kashyap Chitta, Liang Pan, Haoguang Mai, Qingwen Bu, Hao Zhao, Cunyuan Zheng, Ping Luo, Hongyang Li.<br>
-                    <i style="color:rgb(0, 0, 100);">IEEE International Conference on Robotics and Automation (ICRA), 2026</i><br>
-                    <a href="https://opendrivelab.com/AMS/" target="_blank">[<u>page</u>]</a>
-                    <a href="https://arxiv.org/abs/2511.17373" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/AMS" target="_blank">[<u>code</u>]</a>
+                    <b>Agility Meets Stability: Versatile Humanoid Control with Heterogeneous Data</b><br>
+                    Yixuan Pan*, Ruoyi Qiao*, <b>Li Chen</b>, Kashyap Chitta, Liang Pan, Haoguang Mai, Qingwen Bu, Hao Zhao, Cunyuan Zheng, Ping Luo, Hongyang Li.<br>
+                    <i>IEEE International Conference on Robotics and Automation (ICRA), 2026</i><br>
+                    <a href="https://opendrivelab.com/AMS/" target="_blank" rel="noopener noreferrer">[page]</a>
+                    <a href="https://arxiv.org/abs/2511.17373" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/AMS" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <source srcset="assets/images/TopoNet.webp" type="image/webp">
-                    <img src="assets/images/TopoNet.png" loading="lazy" alt="Graph-based Topology Reasoning for Driving Scenes">
-                  </picture>
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image" src="assets/images/TopoNet-thumb.webp" width="480" height="231" loading="lazy" decoding="async" fetchpriority="low" alt="TopoNet graph-based topology reasoning for driving scenes">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">Graph-based Topology Reasoning for Driving Scenes</b><br>
-                    Tianyu Li*, <b style="color:rgb(50, 50, 50);">Li Chen*<sup>†</sup></b>, Huijie Wang, Yang Li, Jiazhi Yang, Xiangwei Geng, Hang Xu, Chunjing Xu, Junchi Yan, Ping Luo, Hongyang Li.<br>
-                    <i style="color:rgb(0, 0, 100);">SCIENCE CHINA Information Sciences (SCIS), 2026</i><br>
-                    <a href="https://arxiv.org/abs/2304.05277" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/TopoNet" target="_blank">[<u>code</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/OpenLane-V2" target="_blank">[<u>dataset</u>]</a>
+                    <b>Graph-based Topology Reasoning for Driving Scenes</b><br>
+                    Tianyu Li*, <b>Li Chen*<sup>†</sup></b>, Huijie Wang, Yang Li, Jiazhi Yang, Xiangwei Geng, Hang Xu, Chunjing Xu, Junchi Yan, Ping Luo, Hongyang Li.<br>
+                    <i>SCIENCE CHINA Information Sciences (SCIS), 2026</i><br>
+                    <a href="https://arxiv.org/abs/2304.05277" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/TopoNet" target="_blank" rel="noopener noreferrer">[code]</a>
+                    <a href="https://github.com/OpenDriveLab/OpenLane-V2" target="_blank" rel="noopener noreferrer">[dataset]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns" style="background-color: #ffffd0">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="assets/images/ReSim.gif" loading="lazy" alt="ReSim: Reliable World Simulation for Autonomous Driving">
+            <article class="publication publication--featured">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image publication__image--animated" src="assets/images/ReSim-poster.webp" data-animated-src="assets/images/ReSim-animated.webp" width="480" height="136" loading="lazy" decoding="async" fetchpriority="low" alt="ReSim autonomous driving world simulation">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">ReSim: Reliable World Simulation for Autonomous Driving</b><br>
-                    Jiazhi Yang, Kashyap Chitta, Shenyuan Gao, Long Chen, Yuqian Shao, Xiaosong Jia, Hongyang Li, Andreas Geiger, Xiangyu Yue, <b style="color:rgb(50, 50, 50);">Li Chen<sup>†</sup></b>.<br>
-                    <i style="color:rgb(0, 0, 100);">Advances in Neural Information Processing Systems (NeurIPS), 2025</i><br>
-                    <b style="color:rgb(255, 100, 0);">Spotlight (3.2%)</b><br>
-                    <a href="https://opendrivelab.com/ReSim" target="_blank">[<u>page</u>]</a>
-                    <a href="https://arxiv.org/abs/2506.09981" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/ReSim" target="_blank">[<u>code</u>]</a>
+                    <b>ReSim: Reliable World Simulation for Autonomous Driving</b><br>
+                    Jiazhi Yang, Kashyap Chitta, Shenyuan Gao, Long Chen, Yuqian Shao, Xiaosong Jia, Hongyang Li, Andreas Geiger, Xiangyu Yue, <b>Li Chen<sup>†</sup></b>.<br>
+                    <i>Advances in Neural Information Processing Systems (NeurIPS), 2025</i><br>
+                    <b>Spotlight (3.2%)</b><br>
+                    <a href="https://opendrivelab.com/ReSim" target="_blank" rel="noopener noreferrer">[page]</a>
+                    <a href="https://arxiv.org/abs/2506.09981" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/ReSim" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
             
-            <article class="columns" style="background-color: #ffffd0">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <source srcset="assets/images/E2E_survey.webp" type="image/webp">
-                    <img src="assets/images/E2E_survey.png" loading="lazy" alt="End-to-end Autonomous Driving: Challenges and Frontiers">
-                  </picture>
+            <article class="publication publication--featured">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image" src="assets/images/E2E_survey-thumb.webp" width="480" height="318" loading="lazy" decoding="async" fetchpriority="low" alt="End-to-end autonomous driving challenges and frontiers">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">End-to-end Autonomous Driving: Challenges and Frontiers</b><br>
-                    <b style="color:rgb(50, 50, 50);">Li Chen</b>, Penghao Wu, Kashyap Chitta, Bernhard Jaeger, Andreas Geiger, Hongyang Li.<br>
-                    <i style="color:rgb(0, 0, 100);">IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI), 2024</i><br>
-                    <a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=34" target="_blank"><b style="color:rgb(255, 100, 0);">[TPAMI Top-1 Popular, Jan 2025 - Now]</b></a><br>
-                    <a href="https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving" target="_blank">[<u>page</u>]</a>
-                    <a href="https://ieeexplore.ieee.org/document/10614862" target="_blank">[<u>paper</u>]</a>
+                    <b>End-to-end Autonomous Driving: Challenges and Frontiers</b><br>
+                    <b>Li Chen</b>, Penghao Wu, Kashyap Chitta, Bernhard Jaeger, Andreas Geiger, Hongyang Li.<br>
+                    <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI), 2024</i><br>
+                    <a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=34" target="_blank" rel="noopener noreferrer"><b>[TPAMI Top-1 Popular, Jan 2025 - Now]</b></a><br>
+                    <a href="https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving" target="_blank" rel="noopener noreferrer">[page]</a>
+                    <a href="https://ieeexplore.ieee.org/document/10614862" target="_blank" rel="noopener noreferrer">[paper]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <source srcset="assets/images/CLOVER.webp" type="image/webp">
-                    <img src="assets/images/CLOVER.png" loading="lazy" alt="Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation">
-                  </picture>
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image" src="assets/images/CLOVER-thumb.webp" width="480" height="201" loading="lazy" decoding="async" fetchpriority="low" alt="CLOVER closed-loop visuomotor control project">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation</b><br>
-                    Qingwen Bu*, Jia Zeng*, <b style="color:rgb(50, 50, 50);">Li Chen*</b>, Yanchao Yang, Guyue Zhou, Junchi Yan, Ping Luo, Heming Cui, Yi Ma, Hongyang Li.<br>
-                    <i style="color:rgb(0, 0, 100);">Advances in Neural Information Processing Systems (NeurIPS), 2024</i><br>
-                    <a href="https://arxiv.org/abs/2409.09016" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/CLOVER" target="_blank">[<u>code</u>]</a>
+                    <b>Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation</b><br>
+                    Qingwen Bu*, Jia Zeng*, <b>Li Chen*</b>, Yanchao Yang, Guyue Zhou, Junchi Yan, Ping Luo, Heming Cui, Yi Ma, Hongyang Li.<br>
+                    <i>Advances in Neural Information Processing Systems (NeurIPS), 2024</i><br>
+                    <a href="https://arxiv.org/abs/2409.09016" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/CLOVER" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="assets/images/ViDAR.gif" loading="lazy" alt="Visual Point Cloud Forecasting enables Scalable Autonomous Driving">
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image publication__image--animated" src="assets/images/ViDAR-poster.webp" data-animated-src="assets/images/ViDAR-animated.webp" width="405" height="270" loading="lazy" decoding="async" fetchpriority="low" alt="ViDAR visual point cloud forecasting demonstration">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">Visual Point Cloud Forecasting enables Scalable Autonomous Driving</b><br>
-                    Zetong Yang, <b style="color:rgb(50, 50, 50);">Li Chen</b>, Yanan Sun, Hongyang Li.<br>
-                    <i style="color:rgb(0, 0, 100);">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024</i><br>
-                    <b style="color:rgb(255, 100, 0);">Highlight (11.9%)</b><br>
-                    <a href="https://arxiv.org/abs/2312.17655" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/ViDAR" target="_blank">[<u>code</u>]</a>
+                    <b>Visual Point Cloud Forecasting enables Scalable Autonomous Driving</b><br>
+                    Zetong Yang, <b>Li Chen</b>, Yanan Sun, Hongyang Li.<br>
+                    <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024</i><br>
+                    <b>Highlight (11.9%)</b><br>
+                    <a href="https://arxiv.org/abs/2312.17655" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/ViDAR" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="assets/images/GenAD_Vista.gif" loading="lazy" alt="Generalized Predictive Model for Autonomous Driving">
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image publication__image--animated" src="assets/images/GenAD_Vista-poster.webp" data-animated-src="assets/images/GenAD_Vista-animated.webp" width="479" height="270" loading="lazy" decoding="async" fetchpriority="low" alt="GenAD generalized predictive model demonstration">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">Generalized Predictive Model for Autonomous Driving</b><br>
-                    Jiazhi Yang*, Shenyuan Gao*, Yihang Qiu*, <b style="color:rgb(50, 50, 50);">Li Chen<sup>†</sup></b>, Tianyu Li, Bo Dai, Kashyap Chitta, Penghao Wu, Jia Zeng, Ping Luo, Jun Zhang, Andreas Geiger, Yu Qiao, Hongyang Li<sup>†</sup>.<br>
-                    <i style="color:rgb(0, 0, 100);">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024</i><br>
-                    <b style="color:rgb(255, 100, 0);">Highlight (11.9%)</b><br>
-                    <a href="https://arxiv.org/abs/2403.09630" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/DriveAGI" target="_blank">[<u>dataset</u>]</a>
+                    <b>Generalized Predictive Model for Autonomous Driving</b><br>
+                    Jiazhi Yang*, Shenyuan Gao*, Yihang Qiu*, <b>Li Chen<sup>†</sup></b>, Tianyu Li, Bo Dai, Kashyap Chitta, Penghao Wu, Jia Zeng, Ping Luo, Jun Zhang, Andreas Geiger, Yu Qiao, Hongyang Li<sup>†</sup>.<br>
+                    <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024</i><br>
+                    <b>Highlight (11.9%)</b><br>
+                    <a href="https://arxiv.org/abs/2403.09630" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/DriveAGI" target="_blank" rel="noopener noreferrer">[dataset]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns" style="background-color: #ffffd0">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <source srcset="assets/images/UniAD.webp" type="image/webp">
-                    <img src="assets/images/UniAD.png" loading="lazy" alt="Planning-oriented Autonomous Driving">
-                  </picture>
+            <article class="publication publication--featured">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image" src="assets/images/UniAD-thumb.webp" width="480" height="176" loading="lazy" decoding="async" fetchpriority="low" alt="UniAD planning-oriented autonomous driving system">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">Plannning-oriented Autonomous Driving</b><br>
-                    Yihan Hu*, Jiazhi Yang*, <b style="color:rgb(50, 50, 50);">Li Chen*<sup>†</sup></b>, Keyu Li*, Chonghao Sima, Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li<sup>†</sup>.<br>
-                    <i style="color:rgb(0, 0, 100);">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023</i><br>
-                    <b style="color:rgb(255, 100, 0);">Best Paper (2/9155)</b><br>
-                    <a href="https://arxiv.org/abs/2212.10156" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/UniAD" target="_blank">[<u>code</u>]</a>
+                    <b>Planning-oriented Autonomous Driving</b><br>
+                    Yihan Hu*, Jiazhi Yang*, <b>Li Chen*<sup>†</sup></b>, Keyu Li*, Chonghao Sima, Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li<sup>†</sup>.<br>
+                    <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023</i><br>
+                    <b>Best Paper (2/9155)</b><br>
+                    <a href="https://arxiv.org/abs/2212.10156" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/UniAD" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <source srcset="assets/images/PPGeo.webp" type="image/webp">
-                    <img src="assets/images/PPGeo.png" loading="lazy" alt="Policy Pre-training for Autonomous Driving via Self-supervised Geometric Modeling">
-                  </picture>
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image" src="assets/images/PPGeo-thumb.webp" width="480" height="236" loading="lazy" decoding="async" fetchpriority="low" alt="Policy pre-training with self-supervised geometric modeling">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">Policy Pre-training for Autonomous Driving via Self-supervised Geometric Modeling</b><br>
-                    Penghao Wu, <b style="color:rgb(50, 50, 50);">Li Chen</b>, Hongyang Li, Xiaosong Jia, Junchi Yan, Yu Qiao.<br>
-                    <i style="color:rgb(0, 0, 100);">International Conference on Learning Representations (ICLR), 2023</i><br>
-                    <a href="https://arxiv.org/abs/2212.10156" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/PPGeo" target="_blank">[<u>code</u>]</a>
+                    <b>Policy Pre-training for Autonomous Driving via Self-supervised Geometric Modeling</b><br>
+                    Penghao Wu, <b>Li Chen</b>, Hongyang Li, Xiaosong Jia, Junchi Yan, Yu Qiao.<br>
+                    <i>International Conference on Learning Representations (ICLR), 2023</i><br>
+                    <a href="https://arxiv.org/abs/2212.10156" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/PPGeo" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <source srcset="assets/images/TCP.webp" type="image/webp">
-                    <img src="assets/images/TCP.png" loading="lazy" alt="Trajectory-guided Control Prediction for End-to-end Autonomous Driving: A Simple yet Strong Baseline">
-                  </picture>
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image" src="assets/images/TCP-thumb.webp" width="480" height="209" loading="lazy" decoding="async" fetchpriority="low" alt="Trajectory-guided control prediction for end-to-end driving">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">Trajectory-guided Control Prediction for End-to-end Autonomous Driving: A Simple yet Strong Baseline</b><br>
-                    Penghao Wu*, Xiaosong Jia*, <b style="color:rgb(50, 50, 50);">Li Chen*</b>, Junchi Yan, Hongyang Li, Yu Qiao.<br>
-                    <i style="color:rgb(0, 0, 100);">Advances in Neural Information Processing Systems (NeurIPS), 2022</i><br>
-                    <a href="https://arxiv.org/abs/2206.08129" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenPerceptionX/TCP" target="_blank">[<u>code</u>]</a>
+                    <b>Trajectory-guided Control Prediction for End-to-end Autonomous Driving: A Simple yet Strong Baseline</b><br>
+                    Penghao Wu*, Xiaosong Jia*, <b>Li Chen*</b>, Junchi Yan, Hongyang Li, Yu Qiao.<br>
+                    <i>Advances in Neural Information Processing Systems (NeurIPS), 2022</i><br>
+                    <a href="https://arxiv.org/abs/2206.08129" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenPerceptionX/TCP" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <source srcset="assets/images/ST-P3.webp" type="image/webp">
-                    <img src="assets/images/ST-P3.png" loading="lazy" alt="ST-P3: End-to-End Vision-Based Autonomous Driving via Spatial-Temporal Feature Learning">
-                  </picture>
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image" src="assets/images/ST-P3-thumb.webp" width="480" height="255" loading="lazy" decoding="async" fetchpriority="low" alt="ST-P3 vision-based autonomous driving system">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">ST-P3: End-to-End Vision-Based Autonomous Driving via Spatial-Temporal Feature Learning</b><br>
-                    Shengchao Hu, <b style="color:rgb(50, 50, 50);">Li Chen<sup>†</sup></b>, Penghao Wu, Hongyang Li, Junchi Yan, Dacheng Tao.<br>
-                    <i style="color:rgb(0, 0, 100);">European Conference on Computer Vision (ECCV), 2022</i><br>
-                    <a href="https://arxiv.org/abs/2207.07601" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenPerceptionX/ST-P3" target="_blank">[<u>code</u>]</a>
+                    <b>ST-P3: End-to-End Vision-Based Autonomous Driving via Spatial-Temporal Feature Learning</b><br>
+                    Shengchao Hu, <b>Li Chen<sup>†</sup></b>, Penghao Wu, Hongyang Li, Junchi Yan, Dacheng Tao.<br>
+                    <i>European Conference on Computer Vision (ECCV), 2022</i><br>
+                    <a href="https://arxiv.org/abs/2207.07601" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenPerceptionX/ST-P3" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns" style="background-color: #ffffd0">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="assets/images/PersFormer.gif" loading="lazy" alt="PersFormer: 3D Lane Detection via Perspective Transformer and the OpenLane Benchmark">
+            <article class="publication publication--featured">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image publication__image--animated" src="assets/images/PersFormer-poster.webp" data-animated-src="assets/images/PersFormer-animated.webp" width="406" height="270" loading="lazy" decoding="async" fetchpriority="low" alt="PersFormer 3D lane detection demonstration">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">PersFormer: 3D Lane Detection via Perspective Transformer and the OpenLane Benchmark</b><br>
-                    <b style="color:rgb(50, 50, 50);">Li Chen*<sup>†</sup></b>, Chonghao Sima*, Yang Li*, Zehan Zheng, Jiajie Xu, Xiangwei Geng, Hongyang Li<sup>†</sup>, Conghui He, Jianping Shi, Yu Qiao, Junchi Yan.<br>
-                    <i style="color:rgb(0, 0, 100);">European Conference on Computer Vision (ECCV), 2022</i><br>
-                    <b style="color:rgb(255, 100, 0);">Oral Presentation (2.7%)</b><br>
-                    <a href="https://arxiv.org/abs/2203.11089" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/PersFormer_3DLane" target="_blank">[<u>code</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/OpenLane" target="_blank">[<u>dataset</u>]</a>
+                    <b>PersFormer: 3D Lane Detection via Perspective Transformer and the OpenLane Benchmark</b><br>
+                    <b>Li Chen*<sup>†</sup></b>, Chonghao Sima*, Yang Li*, Zehan Zheng, Jiajie Xu, Xiangwei Geng, Hongyang Li<sup>†</sup>, Conghui He, Jianping Shi, Yu Qiao, Junchi Yan.<br>
+                    <i>European Conference on Computer Vision (ECCV), 2022</i><br>
+                    <b>Oral Presentation (2.7%)</b><br>
+                    <a href="https://arxiv.org/abs/2203.11089" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/PersFormer_3DLane" target="_blank" rel="noopener noreferrer">[code]</a>
+                    <a href="https://github.com/OpenDriveLab/OpenLane" target="_blank" rel="noopener noreferrer">[dataset]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <h4>Selected Preprint <span>(See all <a href="https://scholar.google.com/citations?user=ulZxvY0AAAAJ&hl=en" target="_blank"><u>here</u></a>.)</span></h4>
+            <h3 class="subsection-title">Selected Preprints <span>(See all <a href="https://scholar.google.com/citations?user=ulZxvY0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">here</a>.)</span></h3>
 
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <img src="assets/images/WE.webp" loading="lazy" alt="World Engine: Towards the Era of Post-Training for Physical AI">
-                  </picture>
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image" src="assets/images/WE-thumb.webp" width="480" height="133" loading="lazy" decoding="async" fetchpriority="low" alt="World Engine for physical AI post-training">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">World Engine: Towards the Era of Post-Training for Physical AI</b><br>
-                    Tianyu Li*, <b style="color:rgb(50, 50, 50);">Li Chen*</b>, Caojun Wang*, Haochen Liu*, Kashyap Chitta, Yuhang Lu, Naisheng Ye, Yufei Wang, Jiaxin Peng, Jin Pan, Zhaoyu Su, Andrei Bursuc, Shengbo Eben Li, Andreas Geiger, Honglin Bian, Hongyang Li*, Peng Su</b>.<br>
+                    <b>World Engine: Towards the Era of Post-Training for Physical AI</b><br>
+                    Tianyu Li*, <b>Li Chen*</b>, Caojun Wang*, Haochen Liu*, Kashyap Chitta, Yuhang Lu, Naisheng Ye, Yufei Wang, Jiaxin Peng, Jin Pan, Zhaoyu Su, Andrei Bursuc, Shengbo Eben Li, Andreas Geiger, Honglin Bian, Hongyang Li*, Peng Su.<br>
                     arXiv preprint, 2026<br>
-                    <a href="https://opendrivelab.com/WorldEngine/" target="_blank">[<u>page</u>]</a>
-                    <!-- <a href="https://arxiv.org/abs/2602.09021" target="_blank">[<u>paper</u>]</a> -->
-                    <a href="https://github.com/OpenDriveLab/WorldEngine" target="_blank">[<u>code</u>]</a>
+                    <a href="https://opendrivelab.com/WorldEngine/" target="_blank" rel="noopener noreferrer">[page]</a>
+                    <!-- <a href="https://arxiv.org/abs/2602.09021" target="_blank" rel="noopener noreferrer">[paper]</a> -->
+                    <a href="https://github.com/OpenDriveLab/WorldEngine" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <img src="assets/images/Kai0.gif" loading="lazy" alt="Resource-Aware Robust Manipulation via Taming Distributional Inconsistencies">
-                  </picture>
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image publication__image--animated" src="assets/images/Kai0-poster.webp" data-animated-src="assets/images/Kai0-animated.webp" width="320" height="158" loading="lazy" decoding="async" fetchpriority="low" alt="Resource-aware robust manipulation demonstration">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x3C7;</mi></math>0: Resource-Aware Robust Manipulation via Taming Distributional Inconsistencies</math></b><br>
-                    Kinetix AI</b>.<br>
+                    <b>χ0: Resource-Aware Robust Manipulation via Taming Distributional Inconsistencies</b><br>
+                    Kinetix AI.<br>
                     arXiv preprint, 2026<br>
-                    <a href="https://mmlab.hk/research/kai0" target="_blank">[<u>page</u>]</a>
-                    <a href="https://arxiv.org/abs/2602.09021" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenDriveLab/kai0" target="_blank">[<u>code</u>]</a>
+                    <a href="https://mmlab.hk/research/kai0" target="_blank" rel="noopener noreferrer">[page]</a>
+                    <a href="https://arxiv.org/abs/2602.09021" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenDriveLab/kai0" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <picture>
-                    <source srcset="assets/images/openpilot.webp" type="image/webp">
-                    <img src="assets/images/openpilot.png" loading="lazy" alt="Mastering End-to-end Autonomous Driving with Low-Cost Device: Diving into the Devils of Openpilot">
-                  </picture>
+            <article class="publication">
+              <div class="publication__media">
+                <figure class="publication__figure">
+                  <img class="publication__image" src="assets/images/openpilot-thumb.webp" width="480" height="199" loading="lazy" decoding="async" fetchpriority="low" alt="Openpilot end-to-end autonomous driving project">
                 </figure>
               </div>
-              <div class="column">
+              <div class="publication__body">
                 <div class="content">
                   <p>
-                    <b style="color:rgb(0, 0, 0);">Mastering End-to-end Autonomous Driving with Low-Cost Device: Diving into the Devils of Openpilot</b><br>
-                    <b style="color:rgb(50, 50, 50);">Li Chen*<sup>†</sup></b>, Huijie Wang*, Tutian Tang, Gen Liu, Zihao Zhang, Zhitian Cai, Yang Li, Penghao Wu, Tianyu Li.<br>
+                    <b>Mastering End-to-end Autonomous Driving with Low-Cost Device: Diving into the Devils of Openpilot</b><br>
+                    <b>Li Chen*<sup>†</sup></b>, Huijie Wang*, Tutian Tang, Gen Liu, Zihao Zhang, Zhitian Cai, Yang Li, Penghao Wu, Tianyu Li.<br>
                     Tech report, 2022<br>
-                    <a href="https://sites.google.com/view/openpilot-deepdive/home" target="_blank">[<u>page</u>]</a>
-                    <a href="https://arxiv.org/abs/2206.08176" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/OpenPerceptionX/Openpilot-Deepdive" target="_blank">[<u>code</u>]</a>
+                    <a href="https://sites.google.com/view/openpilot-deepdive/home" target="_blank" rel="noopener noreferrer">[page]</a>
+                    <a href="https://arxiv.org/abs/2206.08176" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="https://github.com/OpenPerceptionX/Openpilot-Deepdive" target="_blank" rel="noopener noreferrer">[code]</a>
                   </p>
                 </div>
               </div>
             </article>
 
-            <h3 id="activity">Activity</h3> 
+      </section>
 
-            <ul style="color: rgb(50, 50, 50);">
+      <section id="activity" class="page-section" aria-labelledby="activity-heading">
+        <h2 id="activity-heading">Activity</h2>
+
+            <ul class="activity-list">
               <li>Workshop/Tutorial Organizer: 
                 <ul>
-                  <li><a href="https://coop-intelligence.github.io/" target="_blank"><u>2nd Workshop on Multi-Agent Embodied Intelligent Systems</u></a>, CVPR 2025</li>
-                  <li><a href="https://coop-intelligence.github.io/eccv2024/" target="_blank"><u>1st Workshop on Cooperative Intelligence for Embodied AI</u></a>, ECCV 2024</li>
-                  <li><a href="https://opendrivelab.com/cvpr2024/tutorial/" target="_blank"><u>Towards Building AGI in Autonomy and Robotics</u></a>, CVPR 2024 (Primary Organizer)</li>
-                  <li><a href="https://opendrivelab.com/e2ead/cvpr23.html" target="_blank"><u>End-to-end Autonomous Driving: Emerging Tasks and Challenges</u></a>, CVPR 2023</li>
-                  <li><a href="https://opendrivelab.com/sr4ad/iclr23.html" target="_blank"><u>Workshop on Scene Representations for Autonomous Driving</u></a>, ICLR 2023</li>
+                  <li><a href="https://coop-intelligence.github.io/" target="_blank" rel="noopener noreferrer">2nd Workshop on Multi-Agent Embodied Intelligent Systems</a>, CVPR 2025</li>
+                  <li><a href="https://coop-intelligence.github.io/eccv2024/" target="_blank" rel="noopener noreferrer">1st Workshop on Cooperative Intelligence for Embodied AI</a>, ECCV 2024</li>
+                  <li><a href="https://opendrivelab.com/cvpr2024/tutorial/" target="_blank" rel="noopener noreferrer">Towards Building AGI in Autonomy and Robotics</a>, CVPR 2024 (Primary Organizer)</li>
+                  <li><a href="https://opendrivelab.com/e2ead/cvpr23.html" target="_blank" rel="noopener noreferrer">End-to-end Autonomous Driving: Emerging Tasks and Challenges</a>, CVPR 2023</li>
+                  <li><a href="https://opendrivelab.com/sr4ad/iclr23.html" target="_blank" rel="noopener noreferrer">Workshop on Scene Representations for Autonomous Driving</a>, ICLR 2023</li>
                 </ul>
               </li>
               <li>Area Chair: 
@@ -554,34 +477,61 @@
                   <li>Conference: CVPR, ICCV, ECCV, NeurIPS, ICLR, ICML, RSS, ICRA, IROS, WACV</li>
                 </ul>
               </li>
-              <li>Teaching Assitant: 
+              <li>Teaching Assistant:
                 <ul>
                   <li>DASC7606 Deep Learning (2022-2023 Spring, 2023-2024 Spring)</li>
                   <li>COMP7506 Smart Phone Apps Development (2024-2025 Spring, 2025-2026 Summer)</li>
                 </ul>
+              </li>
             </ul>
+      </section>
 
-            <h3 id="awards">Honors</h3> 
+      <section id="awards" class="page-section" aria-labelledby="awards-heading">
+        <h2 id="awards-heading">Honors</h2>
 
-            <ul style="color: rgb(50, 50, 50);">
+            <ul class="honors-list">
               <li>Outstanding/Top/Gold Reviewer: CVPR'23, NeurIPS'23, ICML'26</li>
               <li>The World Artificial Intelligence Conference (WAIC) Yunfan Award, 2023</li>
               <li>HKU Presidential PhD Scholar (HKU-PS), 2023</li>
               <li>Outstanding Graduate of Shanghai, 2019</li>
             </ul>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
+    </main>
+  </div>
 
   <script>
-    var elm = document.querySelector('#sidebar');
-    var ms = new MenuSpy(elm, {
-      activeClass: 'is-active'
-    });
+    (() => {
+      const animatedImages = document.querySelectorAll('[data-animated-src]');
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (prefersReducedMotion) return;
+
+      const loadAnimation = (image) => {
+        const animatedSource = image.dataset.animatedSrc;
+        if (!animatedSource) return;
+        image.src = animatedSource;
+        delete image.dataset.animatedSrc;
+      };
+
+      if (!('IntersectionObserver' in window)) {
+        animatedImages.forEach(loadAnimation);
+        return;
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          if (entry.target.complete) {
+            loadAnimation(entry.target);
+          } else {
+            entry.target.addEventListener('load', () => loadAnimation(entry.target), { once: true });
+          }
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '240px 0px' });
+
+      animatedImages.forEach((image) => observer.observe(image));
+    })();
   </script>
 </body>
 
